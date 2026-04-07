@@ -1,5 +1,7 @@
+"use client";
 import Table from "@/components/Table/table";
 import Image from "next/image";
+import contacts from "./contacts.json";
 
 interface Contact {
   contactInfo: {
@@ -13,97 +15,11 @@ interface Contact {
   lastActivity: string;
 }
 
-interface ContactRow extends Contact {
-  actions: {
-    deleteFn: () => void;
-    updateFn: () => void;
-    createFn: () => void;
-  };
-}
-
 interface Column {
-  key: keyof ContactRow;
+  key: keyof Contact | string;
   label: string;
-  render?: (row: ContactRow) => React.ReactNode;
+  render?: (row: Contact) => React.ReactNode;
 }
-
-const employees: ContactRow[] = [
-  {
-    contactInfo: {
-      imgUrl: "https://randomuser.me/api/portraits/men/7.jpg",
-      name: "Carlos Martínez",
-      email: "carlos@example.com",
-    },
-    company: "Wayne Enterprises",
-    status: "customer",
-    lastActivity: "4 days ago",
-    actions: {
-      deleteFn: () => {},
-      updateFn: () => {},
-      createFn: () => {},
-    },
-  },
-  {
-    contactInfo: {
-      imgUrl: "https://randomuser.me/api/portraits/women/8.jpg",
-      name: "Sofia Hernández",
-      email: "sofia@example.com",
-    },
-    company: "Stark Industries",
-    status: "lead",
-    lastActivity: "2 weeks ago",
-    actions: {
-      deleteFn: () => {},
-      updateFn: () => {},
-      createFn: () => {},
-    },
-  },
-  {
-    contactInfo: {
-      imgUrl: "https://randomuser.me/api/portraits/men/9.jpg",
-      name: "David López",
-      email: "david@example.com",
-    },
-    company: "Oscorp",
-    status: "lead",
-    lastActivity: "6 hours ago",
-    actions: {
-      deleteFn: () => {},
-      updateFn: () => {},
-      createFn: () => {},
-    },
-  },
-  {
-    contactInfo: {
-      imgUrl: "https://randomuser.me/api/portraits/women/10.jpg",
-      name: "Mariana Torres",
-      email: "mariana@example.com",
-    },
-    company: "Tyrell Corp.",
-    status: "overdue",
-    lastActivity: "yesterday",
-    actions: {
-      deleteFn: () => {},
-      updateFn: () => {},
-      createFn: () => {},
-    },
-  },
-  {
-    contactInfo: {
-      imgUrl: "https://randomuser.me/api/portraits/men/11.jpg",
-      name: "Andrés Gómez",
-      email: "andres@example.com",
-    },
-    company: "Cyberdyne Systems",
-    status: "customer",
-    lastActivity: "30 minutes ago",
-    actions: {
-      deleteFn: () => {},
-      updateFn: () => {},
-      createFn: () => {},
-    },
-  },
-];
 
 const colorPerStatus = {
   overdue: "bg-surface-error text-on-surface-error",
@@ -138,10 +54,10 @@ const columns: Column[] = [
   {
     key: "status",
     label: "Status",
-    render: (row: ContactRow) => {
+    render: (row: Contact) => {
       return (
         <div
-          className={`${colorPerStatus[row.status as keyof typeof colorPerStatus]} text-center rounded-lg uppercase font-semibold`} // corregir esto, se ve horrible
+          className={`${colorPerStatus[row.status as keyof typeof colorPerStatus]} text-center w-fit px-4 text-sm tracking-tighter rounded-lg uppercase font-semibold`} // corregir esto, se ve horrible
         >
           {row?.status}
         </div>
@@ -159,7 +75,7 @@ const columns: Column[] = [
             View
           </button>
           <button className="flex-1 bg-surface-container-high rounded-sm text-on-surface px-4 py-2">
-            Edit
+            Contact
           </button>
         </div>
       );
@@ -186,7 +102,12 @@ export default function Contacts() {
           </label>
         </div>
       </div>
-      <Table<ContactRow> data={employees} columns={columns} />
+      <Table<Contact>
+        data={contacts}
+        columns={columns}
+        totalRows={20}
+        rowsPerPage={5}
+      />
     </section>
   );
 }
