@@ -3,6 +3,23 @@ import Table from "@/components/Table/table";
 import Image from "next/image";
 import contacts from "./contacts.json";
 
+interface IFetch {
+  filters?: {
+    name: string;
+    company: string;
+    lastActivity: Date;
+  };
+  page: number;
+  perPage: number;
+}
+
+function fetchContacts({ filters, page, perPage }: IFetch) {
+  return contacts.filter((val, index) => {
+    console.log(index + 1, (page - 1) * perPage + 1, page * perPage);
+    return index + 1 >= (page - 1) * perPage + 1 && index + 1 <= page * perPage;
+  });
+}
+
 interface Contact {
   contactInfo: {
     imgUrl: string;
@@ -59,7 +76,7 @@ const columns: Column[] = [
         <div
           className={`${colorPerStatus[row.status as keyof typeof colorPerStatus]} text-center w-fit px-4 text-sm tracking-tighter rounded-lg uppercase font-semibold`} // corregir esto, se ve horrible
         >
-          {row?.status}
+          {row.status}
         </div>
       );
     },
@@ -75,7 +92,7 @@ const columns: Column[] = [
             View
           </button>
           <button className="flex-1 bg-surface-container-high rounded-sm text-on-surface px-4 py-2">
-            Contact
+            Message
           </button>
         </div>
       );
@@ -84,6 +101,7 @@ const columns: Column[] = [
 ];
 
 export default function Contacts() {
+  const CONTACTS_PER_PAGE = 5;
   return (
     <section className="bg-background h-full p-8 justify-start items-start flex flex-col gap-4">
       <div className="flex flex-row w-full">
@@ -91,7 +109,7 @@ export default function Contacts() {
           <h2 className={`font-headline font-bold text-3xl `}>Contacts</h2>
           <p className="text-md text-gray-500 font-bold">Manage your network</p>
         </div>
-        <div className="flex flex-row gap-4 text-on-secondary-container font-light my-auto">
+        <div className="flex flex-row gap-4 text-on-secondary-container font-semibold text-sm my-auto">
           <label className="flex flex-row items-center gap-2 px-4 py-2 bg-secondary-container  rounded-md ">
             <span className="material-symbols-outlined">filter_list</span>
             Filter
@@ -103,10 +121,12 @@ export default function Contacts() {
         </div>
       </div>
       <Table<Contact>
-        data={contacts}
+        fetchData={(page: number) =>
+          fetchContacts({ page: page, perPage: CONTACTS_PER_PAGE })
+        }
         columns={columns}
-        totalRows={20}
-        rowsPerPage={5}
+        totalRows={contacts.length}
+        rowsPerPage={CONTACTS_PER_PAGE}
       />
     </section>
   );

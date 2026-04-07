@@ -16,13 +16,15 @@ export default function Navbar() {
   return (
     <aside className="h-screen w-64 fixed top-0 left-0 z-40 bg-neutral-1 flex flex-col p-4 gap-8">
       {/* <div className="container mx-auto flex flex-col items-center justify-between"> */}
-      <span className="text-lg font-bold text-slate-900">Census CRM</span>
+      <span className="text-lg font-bold text-on-surface-container">
+        Census CRM
+      </span>
       {/* </div> */}
       <nav className="flex flex-col text-white gap-2  ml-2">
         {routes.map((route) => (
           <Link
             key={route.href}
-            className={`${pathname.startsWith(route.href) ? "bg-white text-primary-3 p-2" : "text-slate-500"} flex flex-row items-center gap-4 mt-4`}
+            className={`${pathname.startsWith(route.href) ? "bg-white text-primary-2 p-2" : "text-slate-500"} flex flex-row items-center gap-4 mt-4`}
             href={route.href}
           >
             <span className="material-symbols-outlined">{route.icon}</span>
@@ -30,7 +32,7 @@ export default function Navbar() {
           </Link>
         ))}
       </nav>
-      <button className="mt-auto bg-primary-3 rounded-lg p-2 flex flex-rows items-center justify-center gap-2 text-white font-light text-sm">
+      <button className="mt-auto bg-primary-2 rounded-lg p-2 flex flex-rows items-center justify-center gap-2 text-white font-light text-sm">
         <span className="material-symbols-outlined">add</span>
         New project
       </button>

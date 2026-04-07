@@ -48,5 +48,155 @@
     "company": "Cyberdyne Systems",
     "status": "customer",
     "lastActivity": "30 minutes ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/12.jpg",
+      "name": "Lucía Ramírez",
+      "email": "lucia@example.com"
+    },
+    "company": "Umbrella Corp.",
+    "status": "prospect",
+    "lastActivity": "3 days ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/13.jpg",
+      "name": "Jorge Castillo",
+      "email": "jorge@example.com"
+    },
+    "company": "InGen",
+    "status": "customer",
+    "lastActivity": "1 week ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/14.jpg",
+      "name": "Paola Díaz",
+      "email": "paola@example.com"
+    },
+    "company": "Blue Sun Corp.",
+    "status": "lead",
+    "lastActivity": "5 hours ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/15.jpg",
+      "name": "Ricardo Fernández",
+      "email": "ricardo@example.com"
+    },
+    "company": "LexCorp",
+    "status": "overdue",
+    "lastActivity": "2 days ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/16.jpg",
+      "name": "Fernanda Cruz",
+      "email": "fernanda@example.com"
+    },
+    "company": "Soylent Corp.",
+    "status": "customer",
+    "lastActivity": "10 minutes ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/17.jpg",
+      "name": "Hugo Morales",
+      "email": "hugo@example.com"
+    },
+    "company": "Wonka Industries",
+    "status": "prospect",
+    "lastActivity": "last month"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/18.jpg",
+      "name": "Isabel Soto",
+      "email": "isabel@example.com"
+    },
+    "company": "Massive Dynamic",
+    "status": "lead",
+    "lastActivity": "yesterday"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/19.jpg",
+      "name": "Luis Navarro",
+      "email": "luis@example.com"
+    },
+    "company": "Virtucon",
+    "status": "customer",
+    "lastActivity": "8 hours ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/20.jpg",
+      "name": "Gabriela Vargas",
+      "email": "gabriela@example.com"
+    },
+    "company": "Clampett Oil",
+    "status": "overdue",
+    "lastActivity": "2 weeks ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/21.jpg",
+      "name": "Miguel Ángel Ruiz",
+      "email": "miguel@example.com"
+    },
+    "company": "Gringotts Bank",
+    "status": "prospect",
+    "lastActivity": "5 days ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/22.jpg",
+      "name": "Patricia Mendoza",
+      "email": "patricia@example.com"
+    },
+    "company": "Planet Express",
+    "status": "lead",
+    "lastActivity": "3 hours ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/23.jpg",
+      "name": "Alejandro Silva",
+      "email": "alejandro@example.com"
+    },
+    "company": "Monarch Solutions",
+    "status": "customer",
+    "lastActivity": "yesterday"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/24.jpg",
+      "name": "Verónica Reyes",
+      "email": "veronica@example.com"
+    },
+    "company": "Nakatomi Trading",
+    "status": "prospect",
+    "lastActivity": "2 days ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/25.jpg",
+      "name": "Esteban Ortega",
+      "email": "esteban@example.com"
+    },
+    "company": "Acme Corp.",
+    "status": "lead",
+    "lastActivity": "20 minutes ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/26.jpg",
+      "name": "Claudia Herrera",
+      "email": "claudia@example.com"
+    },
+    "company": "Globex Corporation",
+    "status": "customer",
+    "lastActivity": "last week"
   }
 ]
