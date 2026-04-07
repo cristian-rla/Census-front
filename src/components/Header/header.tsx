@@ -4,7 +4,7 @@ import FotoProfesional from "./Foto_profesional_CRLA.jpeg";
 export default function Header() {
   return (
     <header className="bg-white w-full px-8 py-3 flex items-center gap-25">
-      <label className="relative flex flex-1 items-center bg-neutral-2 p-2 gap-4 rounded-lg">
+      <label className="relative flex flex-1 items-center bg-surface-container-low p-2 gap-4 rounded-lg">
         <span className="pointer-events-none select-none material-symbols-outlined">
           search
         </span>
@@ -15,7 +15,7 @@ export default function Header() {
         ></input>
       </label>
       <div className="flex items-center text-slate-500 gap-6">
-        <button className="flex-1 bg-primary-2 rounded-lg py-2 px-4 text-white font-light">
+        <button className="flex-1 bg-primary-2 rounded-lg py-2 px-4 text-white font-light text-sm">
           Add Lead
         </button>
         <button className="text-on-surface">
