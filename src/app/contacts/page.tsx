@@ -101,13 +101,15 @@ const columns: Column[] = [
 ];
 
 export default function Contacts() {
-  const CONTACTS_PER_PAGE = 5;
+  const CONTACTS_PER_PAGE = 4;
   return (
-    <section className="bg-background h-full p-8 justify-start items-start flex flex-col gap-4">
+    <section className="bg-background h-full p-8 justify-start items-start flex flex-col gap-8">
       <div className="flex flex-row w-full">
-        <div className="flex flex-col flex-1 gap-1">
+        <div className="flex flex-col flex-1 gap-4">
           <h2 className={`font-headline font-bold text-3xl `}>Contacts</h2>
-          <p className="text-md text-gray-500 font-bold">Manage your network</p>
+          <p className="text-md text-gray-500 font-semibold">
+            Manage your network
+          </p>
         </div>
         <div className="flex flex-row gap-4 text-on-secondary-container font-semibold text-sm my-auto">
           <label className="flex flex-row items-center gap-2 px-4 py-2 bg-secondary-container  rounded-md ">

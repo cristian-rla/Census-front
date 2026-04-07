@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Dell XPS 13",
+    "price": 25000,
+    "suministro": 15,
+    "category": "Computadoras",
+    "imageUrl": "https://picsum.photos/seed/laptop1/400/300"
+  },
+  {
+    "id": 2,
+    "name": "Monitor LG UltraWide",
+    "price": 8500,
+    "category": "Monitores",
+    "imageUrl": "https://picsum.photos/seed/monitor2/400/300"
+  },
+  {
+    "id": 3,
+    "name": "Teclado Mecánico Keychron K2",
+    "price": 2200,
+    "suministro": 40,
+    "category": "Periféricos",
+    "imageUrl": "https://picsum.photos/seed/keyboard3/400/300"
+  },
+  {
+    "id": 4,
+    "name": "Mouse Logitech MX Master 3",
+    "price": 1800,
+    "category": "Periféricos",
+    "imageUrl": "https://picsum.photos/seed/mouse4/400/300"
+  },
+  {
+    "id": 5,
+    "name": "Silla Ergonómica Herman Miller",
+    "price": 32000,
+    "suministro": 5,
+    "category": "Muebles",
+    "imageUrl": "https://picsum.photos/seed/chair5/400/300"
+  },
+  {
+    "id": 6,
+    "name": "Smartphone iPhone 15 Pro",
+    "price": 28000,
+    "suministro": 25,
+    "category": "Smartphones",
+    "imageUrl": "https://picsum.photos/seed/iphone6/400/300"
+  },
+  {
+    "id": 7,
+    "name": "Tablet Samsung Galaxy Tab S9",
+    "price": 18000,
+    "category": "Tablets",
+    "imageUrl": "https://picsum.photos/seed/tablet7/400/300"
+  },
+  {
+    "id": 8,
+    "name": "Auriculares Sony WH-1000XM5",
+    "price": 9500,
+    "suministro": 60,
+    "category": "Audio",
+    "imageUrl": "https://picsum.photos/seed/headphones8/400/300"
+  },
+  {
+    "id": 9,
+    "name": "Smartwatch Apple Watch Series 9",
+    "price": 12000,
+    "category": "Wearables",
+    "imageUrl": "https://picsum.photos/seed/watch9/400/300"
+  },
+  {
+    "id": 10,
+    "name": "Cámara Canon EOS R6",
+    "price": 45000,
+    "suministro": 10,
+    "category": "Fotografía",
+    "imageUrl": "https://picsum.photos/seed/camera10/400/300"
+  },
+  {
+    "id": 11,
+    "name": "Impresora HP LaserJet Pro",
+    "price": 6000,
+    "category": "Impresoras",
+    "imageUrl": "https://picsum.photos/seed/printer11/400/300"
+  },
+  {
+    "id": 12,
+    "name": "Router TP-Link AX6000",
+    "price": 5200,
+    "suministro": 35,
+    "category": "Redes",
+    "imageUrl": "https://picsum.photos/seed/router12/400/300"
+  },
+  {
+    "id": 13,
+    "name": "Disco Duro Externo Seagate 2TB",
+    "price": 2500,
+    "category": "Almacenamiento",
+    "imageUrl": "https://picsum.photos/seed/hdd13/400/300"
+  },
+  {
+    "id": 14,
+    "name": "SSD Samsung 1TB NVMe",
+    "price": 3200,
+    "suministro": 50,
+    "category": "Almacenamiento",
+    "imageUrl": "https://picsum.photos/seed/ssd14/400/300"
+  },
+  {
+    "id": 15,
+    "name": "Consola PlayStation 5",
+    "price": 14500,
+    "category": "Consolas",
+    "imageUrl": "https://picsum.photos/seed/ps515/400/300"
+  },
+  {
+    "id": 16,
+    "name": "Consola Xbox Series X",
+    "price": 14000,
+    "suministro": 20,
+    "category": "Consolas",
+    "imageUrl": "https://picsum.photos/seed/xbox16/400/300"
+  },
+  {
+    "id": 17,
+    "name": "Nintendo Switch OLED",
+    "price": 9500,
+    "category": "Consolas",
+    "imageUrl": "https://picsum.photos/seed/switch17/400/300"
+  },
+  {
+    "id": 18,
+    "name": "Proyector Epson Home Cinema",
+    "price": 18000,
+    "suministro": 12,
+    "category": "Proyectores",
+    "imageUrl": "https://picsum.photos/seed/projector18/400/300"
+  },
+  {
+    "id": 19,
+    "name": "Altavoz Inteligente Amazon Echo",
+    "price": 3500,
+    "category": "Audio",
+    "imageUrl": "https://picsum.photos/seed/echo19/400/300"
+  },
+  {
+    "id": 20,
+    "name": "Cafetera Nespresso Vertuo",
+    "price": 4800,
+    "suministro": 30,
+    "category": "Electrodomésticos",
+    "imageUrl": "https://picsum.photos/seed/coffee20/400/300"
+  },
+  {
+    "id": 21,
+    "name": "Refrigerador LG Smart",
+    "price": 28000,
+    "category": "Electrodomésticos",
+    "imageUrl": "https://picsum.photos/seed/fridge21/400/300"
+  },
+  {
+    "id": 22,
+    "name": "Lavadora Samsung EcoBubble",
+    "price": 22000,
+    "suministro": 8,
+    "category": "Electrodomésticos",
+    "imageUrl": "https://picsum.photos/seed/wash22/400/300"
+  },
+  {
+    "id": 23,
+    "name": "Aspiradora Dyson V15",
+    "price": 18000,
+    "category": "Electrodomésticos",
+    "imageUrl": "https://picsum.photos/seed/vacuum23/400/300"
+  },
+  {
+    "id": 24,
+    "name": "Bicicleta Specialized Turbo Vado",
+    "price": 65000,
+    "suministro": 4,
+    "category": "Transporte",
+    "imageUrl": "https://picsum.photos/seed/bike24/400/300"
+  }
+]

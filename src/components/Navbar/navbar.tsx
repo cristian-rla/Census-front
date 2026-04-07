@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <aside className="h-screen w-64 fixed top-0 left-0 z-40 bg-neutral-1 flex flex-col p-4 gap-8">
       {/* <div className="container mx-auto flex flex-col items-center justify-between"> */}
-      <span className="text-lg font-bold text-on-surface-container">
+      <span className="text-2xl font-bold text-on-surface-container pl-2">
         Census CRM
       </span>
       {/* </div> */}
@@ -27,8 +27,12 @@ export default function Navbar() {
             className={`${pathname.startsWith(route.href) ? "bg-white text-primary-2 p-2" : "text-slate-500"} flex flex-row items-center gap-4 mt-4`}
             href={route.href}
           >
-            <span className="material-symbols-outlined">{route.icon}</span>
-            <span className="text-xs font-semibold">{route.name}</span>
+            <span className="material-symbols-outlined select-none">
+              {route.icon}
+            </span>
+            <span className="text-xs font-semibold select-none">
+              {route.name}
+            </span>
           </Link>
         ))}
       </nav>
