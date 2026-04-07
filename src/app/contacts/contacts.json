@@ -1,0 +1,52 @@
+[
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/7.jpg",
+      "name": "Carlos Martínez",
+      "email": "carlos@example.com"
+    },
+    "company": "Wayne Enterprises",
+    "status": "customer",
+    "lastActivity": "4 days ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/8.jpg",
+      "name": "Sofia Hernández",
+      "email": "sofia@example.com"
+    },
+    "company": "Stark Industries",
+    "status": "lead",
+    "lastActivity": "2 weeks ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/9.jpg",
+      "name": "David López",
+      "email": "david@example.com"
+    },
+    "company": "Oscorp",
+    "status": "lead",
+    "lastActivity": "6 hours ago"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/women/10.jpg",
+      "name": "Mariana Torres",
+      "email": "mariana@example.com"
+    },
+    "company": "Tyrell Corp.",
+    "status": "overdue",
+    "lastActivity": "yesterday"
+  },
+  {
+    "contactInfo": {
+      "imgUrl": "https://randomuser.me/api/portraits/men/11.jpg",
+      "name": "Andrés Gómez",
+      "email": "andres@example.com"
+    },
+    "company": "Cyberdyne Systems",
+    "status": "customer",
+    "lastActivity": "30 minutes ago"
+  }
+]
